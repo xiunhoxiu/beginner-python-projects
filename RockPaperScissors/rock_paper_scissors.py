@@ -34,19 +34,18 @@ def is_win(player, opponent):
 
 
 def translate(item):
-    mapping = {
+    convert = {
         "r": "rock",
         "s": "scissors",
         "p": "paper"
     }
     output = ""
     for items in item:
-        output += mapping.get(items, "invalid!")
+        output += convert.get(items, "invalid!")
     return output
 
 
 def encore():
-
     while True:
         play_again = input("Play again [y/n]? ").lower()
 
