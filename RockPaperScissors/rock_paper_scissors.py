@@ -9,7 +9,7 @@ def play():
 
     while user not in choices:
         user = input("""
-        Let's play! \n
+        Let's play! Type: \n
         'r' for rock, 
         'p' for paper,
         's' for scissors? \n 
@@ -23,7 +23,7 @@ def play():
         print(f'\nCongrats, you won! I picked {translate(computer)}.')
         return encore()
 
-    print(f'\nYou lost against my choice {translate(computer)}!')
+    print(f'\nYou lost against my choice, {translate(computer)}!')
     return encore()
 
 
@@ -46,12 +46,16 @@ def translate(item):
 
 
 def encore():
-    play_again = input("Play again [y/n]? ").lower()
 
-    if play_again != "y":
-        return 'Bye!'
-    else:
-        play()
+    while True:
+        play_again = input("Play again [y/n]? ").lower()
+
+        if play_again == "n" or play_again == "no":
+            return 'Okay..Bye!'
+        elif play_again == "y" or play_again == "yes":
+            return play()
+        else:
+            return "Sorry, I don't understand what you want... bye!"
 
 
 print(play())
