@@ -16,11 +16,11 @@ def play():
         what is your choice?: """).lower()
 
     if user == computer:
-        print(f'\nIt\'s a tie.')
+        print('\nIt\'s a tie.')
         return encore()
 
     if is_win(user, computer):
-        print(f'\nCongrats, you won! I picked {translate(computer)}.')
+        print(f'\nCongrats, you win! I picked {translate(computer)}.')
         return encore()
 
     print(f'\nYou lost against my choice, {translate(computer)}!')
