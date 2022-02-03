@@ -2,7 +2,6 @@ import random
 
 
 def play():
-
     choices = ["r", "p", "s"]
     computer = random.choice(choices)
     user = None
