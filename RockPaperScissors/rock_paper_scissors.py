@@ -22,7 +22,7 @@ def play():
         Let's play! Type: \n
         'r' for rock, 
         'p' for paper,
-        's' for scissors? \n 
+        's' for scissors \n 
         what is your choice?: """).lower()
 
     if user == computer:
