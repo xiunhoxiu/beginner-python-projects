@@ -1,3 +1,9 @@
+"""
+Tic Tac Toe class + game play implementation by Kylie Ying
+YouTube Kylie Ying: https://www.youtube.com/ycubed
+Github: https://www.github.com/kying18
+"""
+
 import time
 import math
 from player import HumanPlayer, RandomComputerPlayer
