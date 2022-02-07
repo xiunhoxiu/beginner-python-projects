@@ -2,9 +2,9 @@
 Tutorial by Kylie Ying on youtube: https://www.youtube.com/ycubed
 Her Github: https://github.com/kying18
 
-However, built further on my own:
+I added the following:
 - added encore() function, so the user can play again.
-- added translate() function, so the user can see what the "computer" picked.
+- added translate() function, so the user can see what the computer picked.
 - while loops
 - ensured non case-sensitives.
 """
